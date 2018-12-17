@@ -11,6 +11,12 @@
     crossorigin="anonymous">
 
   <title>Hello, world!</title>
+
+  <style>
+    label {
+      width: 6em;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,34 +24,37 @@
 
 
   <div class="container">
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-sm btn-secondary px-4 active">
+    <div class="btn-group btn-group-toggle py-2" data-toggle="buttons">
+      <div class="input-group-prepend">
+        <span class="input-group-text btn btn-sm" id="basic-addon1">
+          Stem1
+        </span>
+      </div>
+      <label class="btn btn-sm btn-secondary active w-60" for="option1">
         <input type="radio" name="options" id="option1" autocomplete="off" checked> Any
       </label>
-      <label class="btn btn-sm btn-success px-4">
+      <label class="btn btn-sm btn-success w-60" for="option2">
         <input type="radio" name="options" id="option2" autocomplete="off"> Yes
       </label>
-      <label class="btn btn-sm btn-danger px-4">
+      <label class="btn btn-sm btn-danger w-60" for="option3">
         <input type="radio" name="options" id="option3" autocomplete="off"> No
       </label>
     </div>
 
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-sm btn-secondary px-4 active">
-        <input type="radio" name="optionsII" id="optionII_1" autocomplete="off" checked> Any
+
+
+    <div class="btn-group btn-group-toggle py-2" data-toggle="buttons">
+      <label class="btn btn-sm btn-secondary active w-60" for="optionII_1">
+        <input type="radio" name="optionsII" id="optionII_1" autocomplete="off"> Any
       </label>
-      <label class="btn btn-sm btn-success px-4">
+      <label class="btn btn-sm btn-success w-60" for="optionII_2">
         <input type="radio" name="optionsII" id="optionII_2" autocomplete="off"> Yes
       </label>
-      <label class="btn btn-sm btn-danger px-4">
+      <label class="btn btn-sm btn-danger w-60" for="optionII_3">
         <input type="radio" name="optionsII" id="optionII_3" autocomplete="off"> No
       </label>
     </div>
   </div>
-
-
-
-
 
 
 
